@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminDoctorsComponent } from './admin/admin-doctors/admin-doctors.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 
 const routes: Routes = [
   { path: 'index', component: HomeComponent },
@@ -25,8 +26,11 @@ const routes: Routes = [
   { path: 'booking-doctor', component: BookingDoctorComponent },
   { path: 'doctor-dashboard', component: DoctorDashboardComponent },
   { path: 'invoices', component: InvoicesComponent },
-  { path: 'admin', component: AdminComponent ,
+  { path: 'admin/', component: AdminComponent ,
     children : [
+      {
+        path : 'dashboard' , component: AdminDashboardComponent
+      },
         {
           path : 'appointments' , component: AdminAppointmentsComponent
         }, {

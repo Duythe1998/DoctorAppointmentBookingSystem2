@@ -26,6 +26,7 @@ import { AdminAppointmentsComponent } from './admin/admin-appointments/admin-app
 import { AdminSpecialitiesComponent } from './admin/admin-specialities/admin-specialities.component';
 import { AdminDoctorsComponent } from './admin/admin-doctors/admin-doctors.component';
 import { AdminPatientComponent } from './admin/admin-patient/admin-patient.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AdminPatientComponent } from './admin/admin-patient/admin-patient.compo
     AdminAppointmentsComponent,
     AdminSpecialitiesComponent,
     AdminDoctorsComponent,
-    AdminPatientComponent
+    AdminPatientComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
